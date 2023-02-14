@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+/* ma mau chung */
+:root {
+    --dark-blue-color: #021A84 ;
+    --red-orange-coler: #FE4C4C;
+
+}
+.header {
+    margin: 20px 0;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.header-container {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container .header-right {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.header-container .header-logo {
+    /* margin-left: 140px; */
+}
+.header-container .header-right .header-text {
+    font-size: 18px;
+    line-height: calc(28 / 18);
+    color: var(--dark-blue-color);
+}
+.header-container .header-right .signin {
+    background-color: var(--dark-blue-color);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 32px;
+    font-size: 18px;
+}
+.header-container .header-right .signin:hover {
+    opacity: 0.6;
+    transition: 0.2s linear;
+}
+.header-container .header-right .signup {
+    background-color: transparent;
+    color: var(--dark-blue-color);
+    border: var(--dark-blue-color) 1px solid ;
+    border-radius: 8px;
+    padding: 11px 32px;
+    font-size: 18px;
+}
+.header-container .header-right .signup:hover {
+    background-color: var(--dark-blue-color);
+    color: #fff;
+    transition: 0.2s linear;
+}
+.header-banner {
+    margin-top: 20px;
+}
