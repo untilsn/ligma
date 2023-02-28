@@ -1,0 +1,96 @@
+@media only screen and (max-width: 1024px){
+    .job .job-list {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+
+    }
+    .search .search-top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .choice .choice-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .choice .choice-container li {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .contact .contact-bottom__container {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        gap: 20px   ;
+    }
+    .contact .contact-bottom__container .container-column__logo {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .contact .contact-bottom__container .container-column {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px)  {
+    .header .header-right {
+        display: none;
+    }
+    .search .search-bottom {
+        display: flex;
+        flex-direction: column;
+    }
+    .job .job-list {
+        grid-template-columns: 1fr;
+    }
+    .coopwith .coopwith-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .seamore .seamore-backgroup {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .contact .contact-top {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .search .propose-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .seamore .seamore-backgroup .backgroup-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .seamore .seamore-backgroup .backgroup-left .backgroup-left__icon {
+        justify-content: center;
+    }
+    .seamore .seamore-backgroup .backgroup-left h1 {
+        text-align: center;
+    }
+    .seamore-backgroup .backgroup-right .backgroup__button{
+       text-align: center;
+       display: flex;
+       align-items: center;
+       margin: auto;
+    }    
+    .partner .partner-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .job .job-top {
+        display: flex;
+        flex-direction: column;
+    }
+}

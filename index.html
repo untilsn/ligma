@@ -4,31 +4,591 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>ligma</title>
+    <script
+      src="https://kit.fontawesome.com/232aed5428.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./accset/reset.css" />
     <link rel="stylesheet" href="./accset/main.css" />
+    <link rel="stylesheet" href="./accset/responsive.css" />
   </head>
   <body>
-    <div id="main">
+    <div class="wrapper">
+      header
       <header class="header">
-        <!-- thanh menu -->
         <div class="container">
           <div class="header-container">
-            <div class="header-logo">
-              <img src="./picture/logo.png" alt="" />
-            </div>
+            <a href="" class="logo">
+              <img srcset="./picture/logo.png 2x" alt="" />
+            </a>
             <div class="header-right">
-              <p class="header-text">Tất Cả Các Job</p>
-              <button class="signup">Đăng ký</button>
-              <button class="signin">Đăng nhập</button>
+              <a href="" class="header-text">Tất Cả Các Job</a>
+              <button class="sign-up">Đăng ký</button>
+              <button class="sign-in">Đăng Nhập</button>
             </div>
           </div>
         </div>
-        <!-- banner -->
-        <div class="header-banner" >
-            <img src="./picture/banner.png" alt="" class="banner">
-        </div>
       </header>
-  </div>
+      <!--  banner -->
+      <div class="main">
+        <div class="banner">
+          <img srcset="./picture/banner.png" alt="" />
+        </div>
+      </div>
+      <!-- search container -->
+      <div class="search">
+        <div class="container">
+          <div class="search-top">
+            <!-- search-left -->
+            <div class="search-left">
+              <i class="fa-solid fa-magnifying-glass search-icon"></i>
+              <input
+                class="search-input"
+                placeholder="Nhập vị trí hoặc từ khóa..."
+                type="text"
+              />
+            </div>
+            <!-- search right -->
+            <div class="search-right">
+              <div class="search-locate">
+                <i class="fa-solid fa-location-dot"></i>
+                <select name="Place" id="Place" class="search-select">
+                  Chọn địa điểm
+                  <option value="da nang " class="">Da nang</option>
+                  <option value="ha noi" class="">Ha noi</option>
+                  <option value="nghe an" class="">Nghe an</option>
+                  <option value="thua thien hue" class="">
+                    Thua thien hue
+                  </option>
+                </select>
+              </div>
+              <button class="search-btn">Tìm Kiếm</button>
+            </div>
+          </div>
+          <!-- search bottom -->
+          <div class="search-bottom">
+            <p class="search-bottom-text">Đề xuất:</p>
+            <ul class="propose-list">
+              <li class="propose-item">Reactjs</li>
+              <li class="propose-item">VueJS</li>
+              <li class="propose-item">Angular</li>
+              <li class="propose-item">Design</li>
+              <li class="propose-item">.NET</li>
+              <li class="propose-item">PHP</li>
+              <li class="propose-item">java</li>
+              <li class="propose-item">Mobile</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- job section -->
+      <div class="job">
+        <div class="container">
+          <!--  -->
+          <div class="job-top">
+            <div class="job-heading">
+              <i class="fa-solid fa-heart job-icon"></i>
+              <h1 class="job-text">Jobs tốt nhất</h1>
+            </div>
+            <a href="#" class="job-link">Xem Tất Cả</a>
+          </div>
+          <!--  -->
+          <ul class="job-list">
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_3.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_3.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_3.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_2.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_2.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_2.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_1.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_1.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+              <li class="job-item">
+                <!-- top -->
+                <div class="job-item__top">
+                  <div class="job-item__top-info">
+                    <div class="top-info__img">
+                      <img src="./picture/avt_1.png" alt="" />
+                    </div>
+                    <h2 class="top-info__data">Data Engineer</h2>
+                  </div>
+                  <span>Full-time</span>
+                </div>
+                <!-- mid -->
+                <div class="job-item__mid">
+                  <div class="job-item__mid-right">
+                    <p class="mid-right__text">Hoa hồng</p>
+                    <h1 class="mid-right__pride">12,000,000<span>VNĐ</span></h1>
+                  </div>
+                  <div class="job-item__mid-left">
+                    <p class="mid-left__text">Thưởng</p>
+                    <h1 class="mid-left__pride">50,000,000<span>VNĐ</span></h1>
+                  </div>
+                </div>
+                <!-- bottom -->
+                <div class="job-item__bottom">
+                  <p class="bottom-text">
+                    <span>Hà Nội</span>
+                    <span>Onboard</span>
+                  </p>
+                  <p class="premium">PREMIUM</p>
+                </div>
+              </li>
+          </ul>
+        </div>
+      </div>
+      <!-- choice -->
+      <div class="choice">
+        <div class="container">
+          <p class="choice-nav">Why?</p>
+          <h1 class="choice-subnav">Tại Sao Lựa Chọn Recland?</h1>
+          <ul class="choice-container">
+            <li class="choice-item__job">
+              <div class="choice-item__img">
+                <img srcset="./picture/looking.png 2x" alt="" />
+              </div>
+              <div class="choice-item__text">
+                Đa dạng việc làm, thêm nhiều lựa chọn hấp dẫn
+              </div>
+              <span
+                >Hơn 200+ việc làm IT, giúp các bạn REC có một kho việc làm để
+                các bạn tìm kiếm, sale jobs đến những ứng viên phù hợp.</span
+              >
+            </li>
+            <li class="choice-item__money">
+              <div class="choice-item__img">
+                <img srcset="./picture/Dollar.png 2x" alt="" />
+              </div>
+              <div class="choice-item__text">
+                Cơ chế hoa hồng hấp dẫn, rõ ràng và minh bạch
+              </div>
+              <span
+                >RecLand đem đến cho các bạn REC mức hoa hồng hấp dẫn, giúp cho
+                các bạn REC có được mức thu nhập tương xứng mà không cần đến
+                công ty làm việc</span
+              >
+            </li>
+            <li class="choice-item__network">
+              <div class="choice-item__img">
+                <img srcset="./picture/Network.png 2x" alt="" />
+              </div>
+              <div class="choice-item__text">
+                Mở rộng network và học hỏi từ cộng đồng
+              </div>
+              <span
+                >RecLand cũng thường xuyên tổ chức những buổi chia sẻ, buổi
+                offline nhằm giúp các bạn REC trau dồi, học hỏi và mở rộng được
+                network trong lĩnh vực tuyển dụng.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- partner -->
+      <div class="partner">
+        <div class="container">
+          <h1 class="partner-heading">Đối Tác</h1>
+          <ul class="partner-list">
+            <li class="partner-item">
+              <img src="./picture/brand_1.png" alt="" />
+            </li>
+            <li class="partner-item">
+              <img src="./picture/brand_2.png" alt="" />
+            </li>
+            <li class="partner-item">
+              <img src="./picture/brand_3.png" alt="" />
+            </li>
+            <li class="partner-item">
+              <img src="./picture/brand_4.png" alt="" />
+            </li>
+            <li class="partner-item">
+              <img src="./picture/brand_5.png" alt="" />
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- coop-with -->
+      <div class="coopwith">
+        <div class="container">
+          <p class="coopwith-heading">Quy trình làm việc</p>
+          <h1 class="coopwith-sub-heading">Hợp tác cùng RecLand</h1>
+          <ul class="coopwith-list">
+            <li class="coopwith-item">
+              <div class="coopwith-item__img">
+                <img srcset="./picture/Add.png 2x" alt="" />
+              </div>
+              <h1 class="coopwith-item__text">Tạo một tài khoản</h1>
+              <p class="coowith-item__decs">Trở thành member trên RecLand</p>
+            </li>
+            <li class="coopwith-item">
+              <div class="coopwith-item__img">
+                <img srcset="./picture/Search.png 2x" alt="" />
+              </div>
+              <h1 class="coopwith-item__text">Tìm kiếm công việc</h1>
+              <p class="coowith-item__decs">
+                Tìm kiếm công việc phù hợp để mời ứng viên
+              </p>
+            </li>
+            <li class="coopwith-item">
+              <div class="coopwith-item__img">
+                <img srcset="./picture/Shield.png 2x" alt="" />
+              </div>
+              <h1 class="coopwith-item__text">Giới thiệu ứng viên</h1>
+              <p class="coowith-item__decs">
+                Giới thiệu ứng viên vào các vị trí đang tuyển, process ứng viên
+                và nhận kết quả
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- djt cmmm -->
+      <div class="seamore">
+        <div class="container">
+          <div class="seamore-backgroup">
+            <!-- left -->
+            <div class="backgroup-left">
+              <i class="fa-solid fa-heart backgroup-left__icon"></i>
+              <div class="backgroup-left__content">
+                <h1>Bạn muốn đến với Recland</h1>
+                <span
+                  >Chúng tôi sẽ giúp bạn thành công trên con đường Recer</span
+                >
+              </div>
+            </div>
+            <!-- right -->
+            <div class="backgroup-right">
+              <button class="backgroup__button">Đăng Ký Ngay</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact -->
+      <div class="contact">
+        <div class="container">
+          <!-- contact top -->
+          <div class="contact-top">
+            <div class="contact-top__left">
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                class="contact-input"
+              />
+              <div class="contact-btn">
+                <img srcset="./picture/stroke.png 2x" alt="" />
+              </div>
+            </div>
+            <div class="contact-top__right">
+              <div class="contact-company">
+                <p class="quantity">99</p>
+                <span>Công việc</span>
+              </div>
+              <div class="contact-company">
+                <p class="quantity">93</p>
+                <span>Công ty</span>
+              </div>
+            </div>
+          </div>
+          <!-- contact bottom -->
+          <!-- <div class="contact-bottom"> -->
+            <div class="contact-bottom__container">
+              <div class="container-column__logo">
+                <div class="column-logo">
+                  <img src="./picture/logo.png" alt="" />
+                </div>
+                <div class="column-item">
+                  <i class="copyright fa-brands fa-facebook"></i>
+                  <i class="copyright fa-brands fa-twitter"></i>
+                  <i class="copyright fa-brands fa-reddit"></i>
+                  <i class="copyright fa-brands fa-instagram"></i>
+                </div>
+              </div>
+              <div class="container-column">
+                <h1>Địa chỉ</h1>
+                <div class="container-column__footer">
+                  <a href="">Tòa nhà AC, 78 Duy Tân</a>
+                  <a href="">Quận Cầu Giấy, Hà Nội</a>
+                </div>
+              </div>
+              <div class="container-column">
+                <h1>Liên hệ</h1>
+                <div class="container-column__footer">
+                  <a href="">0369 713 819</a>
+                  <a href="">luat.nguyen@recland.co</a>
+                </div>
+              </div>
+              <div class="container-column">
+                <h1>Menu</h1>
+                <div class="container-column__footer">
+                  <a href="">Trang chủ</a>
+                  <a href="">Tìm kiếm công việc</a>
+                  <a href="">Sitemaa</a>
+                </div>
+              </div>
+              <div class="container-column">
+                <h1>Tài khoản của tôi</h1>
+                <div class="container-column__footer">
+                  <a href="">Tổng quan</a>
+                  <a href="">Kho CV</a>
+                  <a href="">Thông tin cá nhân</a>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- bottom line -->
+      <section class="line">
+        <div class="container">
+          <p class="title">untilsn</p>
+        </div>
+      </section>
+      <!-- bottom -->
+      <div class="bottom">
+        <div class="container">
+          <a href="#" class="bottom-link">Copyright © 2022 Recland.co</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
